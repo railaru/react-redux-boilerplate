@@ -1,7 +1,7 @@
-export const increment = () => {
-  return { type: 'INCREMENT' };
+export const increment = incrementAmount => {
+  return { type: 'INCREMENT', payload: incrementAmount };
 };
 
-export const decrement = () => {
-  return { type: 'DECREMENT' };
+export const decrement = incrementAmount => {
+  return { type: 'DECREMENT', payload: incrementAmount };
 };
