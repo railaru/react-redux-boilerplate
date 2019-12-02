@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 export default function List() {
   const items = useSelector(state => state.itemList);
+  const counter = useSelector(state => state.counter);
 
   return (
     <>
@@ -16,7 +17,7 @@ export default function List() {
                 role="alert"
               >
                 <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">
-                  New!
+                  Counter: {counter}
                 </span>
                 <span className="font-semibold mr-2 text-left flex-auto">
                   {item.name}
