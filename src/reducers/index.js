@@ -7,3 +7,5 @@ const rootReducer = combineReducers({
   counter: counterReducer,
   isLogged: loggedReducer
 });
+
+export default rootReducer;
