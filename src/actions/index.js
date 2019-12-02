@@ -1,3 +1,11 @@
+export const signIn = isLoggedIn => {
+  return { type: 'SIGN_IN', payload: isLoggedIn };
+};
+
+export const signOut = isLoggedIn => {
+  return { type: 'SIGN_OUT', payload: isLoggedIn };
+};
+
 export const increment = incrementAmount => {
   return { type: 'INCREMENT', payload: incrementAmount };
 };
